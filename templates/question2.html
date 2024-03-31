@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+
+{% block title %}Question 0{% endblock %}
+<h1>On average, how much do you spend a month on Food? Less than $10,000", "$10,000 or more</h1>
+{% block content %}
+    <form action="/answer" method="POST">
+    <p>
+      <input type="radio" name="answer" value ="less">
+       <Label>Less Than 3000</Label>
+      <br>
+      <input type="radio" name="answer" value ="equal">
+      <label>3000</label>  
+      <br>
+      <input type="radio" name="answer" value ="more">
+      <label>Greater Than 3000</label>  
+    </p> 
+    <button>Next</button>   
+    </form>
+{% endblock %}
